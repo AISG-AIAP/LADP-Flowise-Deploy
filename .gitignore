@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------------
+# NEVER COMMIT THESE
+# ---------------------------------------------------------------------------
+
+# Postgres admin password, FLOWISE_SECRETKEY_OVERWRITE, JWT + session secrets.
+# Losing it is unrecoverable; leaking it hands over every saved credential.
+deploy/deploy.env
+
+# Any local secrets or personal notes.
+.env
+*.env
+!*.env.example
+
+# Your subscription id / resource group / prefix.
+deploy/settings.local.sh
+
+# Database dumps and downloaded file shares — full copies of learner data,
+# and each one includes a copy of deploy.env.
+deploy/backups/
+
+# ---------------------------------------------------------------------------
+# Noise
+# ---------------------------------------------------------------------------
+.DS_Store
+*.zip

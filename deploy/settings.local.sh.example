@@ -1,0 +1,14 @@
+# Copy to settings.local.sh and fill in. That file is git-ignored.
+#
+#   cp settings.local.sh.example settings.local.sh
+#
+# Leave SUBSCRIPTION_ID commented out to use whichever subscription you are
+# already signed in to with `az login`.
+
+# SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000"
+RESOURCE_GROUP="flowise-rg"
+LOCATION="southeastasia"
+
+# 3-11 lowercase alphanumeric chars. Names every resource, so make it
+# recognisable: acme-flowise -> acmeflowise-plan, acmeflowisest1a2b3c, ...
+PREFIX="flowise"
